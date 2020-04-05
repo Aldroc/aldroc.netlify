@@ -12,3 +12,7 @@ body{
     float: right;
     vertical-align: top;
 }
+.head {
+    display: flex;
+    flex-direction: row;
+}
