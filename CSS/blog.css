@@ -6,3 +6,8 @@ body{
     margin: 0%;
     font-weight: bold;
 }
+.home {
+    height: 10px;
+    width: 10px;
+    float: right;
+}
