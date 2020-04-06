@@ -75,7 +75,7 @@
             
                 // Show table here
                 const allExpenseHTML = allExpense.map(expense => {
-                    return `<div>${expense.cost} :: ${expense.description} </div>`
+                    return `<b><div>${expense.cost} :: ${expense.description} </div></b>`
                 });
                 const joinedAllExpenseHTML = allExpenseHTML.join("");
                 expenseTableEl.innerHTML = joinedAllExpenseHTML;
