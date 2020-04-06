@@ -8,5 +8,10 @@
 .home_link {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+}
+.home {
+    height: 25px;
+    width: 25px;
     align-self: flex-end;
 }
