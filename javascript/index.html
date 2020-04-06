@@ -18,8 +18,8 @@
     </head>
     <body>
         <h1 id="head"></h1>
-        <input id="inputAmt" type="text">
-        <input id="inputDesc" type="text">
+        <input id="inputAmt" type="text" placeholder="num">
+        <input id="inputDesc" type="text" placeholder="desc">
         <button id="btnAddCost">+</button>
         <div id="expenseTable"></div>
         <script>
@@ -70,7 +70,11 @@
                 headElem.textContent = someText;
             
                 // Show table here
-                
+                const allExpenseHTML = allExpense.map(expense => {
+                    return `<div>${expense.cost} :: ${expense.description} </div>`
+                });
+                const joinedAllExpenseHTML = allExpenseHTML.join("");
+                expenseTableEl.innerHTML = joinedAllExpenseHTML;
             }
 
             // get the button element
