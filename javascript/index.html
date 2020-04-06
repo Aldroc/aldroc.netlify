@@ -4,24 +4,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="theme-color" content="#deb887"/>
+        <link href="CSS/javascript.css" rel="stylesheet">
         <title>Personal Expense</title>
         <style>
             body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+                background-color: burlywood;
+                color: #fceedb;
+                font-family: 'Courier New', Courier, monospace;    
             }
         </style>
-
     </head>
     <body>
+        <div class="home_link">
+            <a href="index.html"><img class="home" src="Assets/vippng.com-casas-png-787477.png"></a>
+        </div>
+        <div class = "web_app">
         <h1 id="head"></h1>
         <input id="inputAmt" type="text" placeholder="num">
         <input id="inputDesc" type="text" placeholder="desc">
         <button id="btnAddCost">+</button>
         <div id="expenseTable"></div>
+        </div>
         <script>
             // get the heading element
             const headElem = document.querySelector("#head");

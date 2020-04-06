@@ -1,0 +1,12 @@
+.web_app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.home_link {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+}
