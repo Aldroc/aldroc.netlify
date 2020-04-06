@@ -18,29 +18,58 @@
     </head>
     <body>
         <h1 id="head"></h1>
-        <input id="inputAmt" type="text"></input>
+        <input id="inputAmt" type="text">
+        <input id="inputDesc" type="text">
         <button id="btnAddCost">+</button>
         <script>
             // get the heading element
             const headElem = document.querySelector("#head");
+
+            // get the reference to desc element
+            const inputDescEl = document.querySelector("#inputDesc");
+
+            // ref to input amt
+            const inputEl = document.querySelector("#inputAmt");
+
             // init value of expense at 0
             let total = 0;
+
             // set the heading element to total
             headElem.textContent=total;
+
+            // allExpense at one place 
+            const allExpense = [];
+
             // onButtonClick add input cost to total
             function addCostToTotal() {
+                const expenseItem = {};
+
                 // read value from inputAmt
-                const input = document.querySelector("#inputAmt");
-                const txtAmt = input.value;
+                const txtAmt = inputEl.value;
+
+                // read the desc from inputDesc
+                const txtDesc = inputDescEl.value;
+
                 // convert it to number
                 const cost = parseInt(txtAmt,10);
+
+                // put it in object
+                expenseItem.description = txtDesc;
+                expenseItem.cost = cost;
+                allExpense.push(expenseItem);
+                console.clear();
+                console.table(allExpense);
+
                 // add that value to total cost
                 total = total + cost;
+
                 // set the heading element to total
                 headElem.textContent = total;
-            } 
+            }
+
             // get the button element
             const element = document.querySelector("#btnAddCost");
+
             // listen to button click event
             element.addEventListener("click", addCostToTotal, false);
         </script>
