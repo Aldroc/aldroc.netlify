@@ -1,0 +1,24 @@
+{
+  "name": "netlify",
+  "version": "1.0.0",
+  "description": "netlify site for learning and experimentation",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aldroc/aldroc.netlify.git"
+  },
+  "author": "Aldroc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aldroc/aldroc.netlify/issues"
+  },
+  "homepage": "https://github.com/Aldroc/aldroc.netlify#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
