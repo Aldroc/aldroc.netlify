@@ -1,32 +1,63 @@
 <html>
     <head>
         <title>Aldroc</title>
-        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
         <meta name="theme-color" content="#deb887"/>
         <link href="CSS/main.css" rel="stylesheet">
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         </head>
     <body>
-        <header class="site-header">
-            <img class="dp" src="https://instagram.famd1-2.fna.fbcdn.net/v/t51.2885-19/s150x150/71525758_418236459076222_1895098742483189760_n.jpg?_nc_ht=instagram.famd1-2.fna.fbcdn.net&_nc_ohc=AkHQ0tCv75QAX_w9bGW&oh=437087629d11ca5547eaeb9f39e01c6e&oe=5EAF7AA4">
-            <div class="site-header-content">
-                    <h1>Learning full stack development :)</h1>
-                    <h3>Wish me luck!</h3>
-                    <h5>I'm learning from <a class="link" target="_blank" href="https://www.youtube.com/playlist?list=PLzvhQUIpvvug-c-bExl_xFcopeQi_sa29">here!</a></h5>
-                    <h4>Progress:</h4>
-                    <b>
-                    <ul>
-                        <li>Hosted site on Netlify.</li><br>
-                        <li>Github and Netlify connection established. Continuous deployment now possible!</li><br>
-                        <li>Set up SSH key to bypass credential entry on each git push.</li><br>
-                        <li>Setting up a <a class="link" target="_blank" href="blog.html">blog</a> on the site for further experimentation.</li><br>
-                        <li>Learning javascript by building a <a class = "link" target="_blank" href="js_index.html">personal expense web app.</a> The reference material can be found <a class="link" target="_blank" href="https://www.youtube.com/playlist?list=PLzvhQUIpvvuj9nN70USkHJrrSeQ9aiqdB">here.</a></li><br>
-                        <li>Set up the front-end web UI framework Bootstrap.</li><br>
-                        <li>Set up Node.js and NPM.</li><br>
-                        <li>Lite Server set up to observe real-time code changes locally.</li><br>
-                    </ul>
-                    </b>
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand mr-auto" href="#"><img class="brand" src="https://instagram.famd1-2.fna.fbcdn.net/v/t51.2885-19/s150x150/71525758_418236459076222_1895098742483189760_n.jpg?_nc_ht=instagram.famd1-2.fna.fbcdn.net&_nc_ohc=AkHQ0tCv75QAX_w9bGW&oh=437087629d11ca5547eaeb9f39e01c6e&oe=5EAF7AA4"></a>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    </ul>    
+                </div>
+            </div>    
+        </nav>
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-2">
+                        <img class="dp" src="https://instagram.famd1-2.fna.fbcdn.net/v/t51.2885-19/s150x150/71525758_418236459076222_1895098742483189760_n.jpg?_nc_ht=instagram.famd1-2.fna.fbcdn.net&_nc_ohc=AkHQ0tCv75QAX_w9bGW&oh=437087629d11ca5547eaeb9f39e01c6e&oe=5EAF7AA4">
+                    </div>
+                    <div class="col-12 col-sm-auto">    
+                        <h1>Learning full stack development :)</h1>
+                        <h3>Wish me luck!</h3>
+                        <h5>I'm learning from <a class="link" target="_blank" href="https://www.youtube.com/playlist?list=PLzvhQUIpvvug-c-bExl_xFcopeQi_sa29">here!</a></h5>
+                    </div>    
+                </div>
             </div>
         </header>
-        
+        <div class="container">
+            <div class="row justify-items-center">
+                <div class="col-12">           
+                    <h4>Progress:</h4>
+                    <b>
+                        <ul>
+                            <li>Hosted site on Netlify.</li><br>
+                            <li>Github and Netlify connection established. Continuous deployment now possible!</li><br>
+                            <li>Set up SSH key to bypass credential entry on each git push.</li><br>
+                            <li>Setting up a <a class="link" target="_blank" href="blog.html">blog</a> on the site for further experimentation.</li><br>
+                            <li>Learning javascript by building a <a class = "link" target="_blank" href="js_index.html">personal expense web app.</a> The reference material can be found <a class="link" target="_blank" href="https://www.youtube.com/playlist?list=PLzvhQUIpvvuj9nN70USkHJrrSeQ9aiqdB">here.</a></li><br>
+                            <li>Set up the front-end web UI framework Bootstrap.</li><br>
+                            <li>Set up Node.js and NPM.</li><br>
+                            <li>Lite Server set up to observe real-time code changes locally.</li><br>
+                            <li>Incorporated Bootstrap elements for a design overhaul.</li><br>
+                            <li>Added navigation bar functionality.</li><br>
+                        </ul>
+                    </b>
+                </div>    
+            </div>        
+        </div>    
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>    
     </body>
 </html>
