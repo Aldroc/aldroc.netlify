@@ -1,7 +1,7 @@
 .jumbotron {
     margin: 0px auto;
     background-color: #deb887 !important;
-    color: #fceedb;
+    color: #ffeab7;
 }
 .dp{
     border-radius: 50%;
@@ -24,4 +24,6 @@ body {
 .navbar-dark{
     background-color: #ab885a;
 }
-
+.footer{
+    background-color: #ffeab7;
+}
