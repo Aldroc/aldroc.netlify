@@ -1,9 +1,6 @@
 .jumbotron {
     margin: 0px auto;
-    color: #fceedb;
-    background-color: #d49d56 !important;
-}
-.link{
+    background-color: #deb887 !important;
     color: #fceedb;
 }
 .dp{
@@ -11,14 +8,13 @@
     height: 150px;
     width: 150px;
     align-self: center;
-    box-shadow: #77654e 2px 5px 5px;
+    box-shadow: #ab885a 2px 5px 5px;
 }
 body {
     margin: 0px;
-    background-color: burlywood !important;
-    color: #fceedb !important;
     padding: 50px 0px 0px 0px;
     z-index: 0;
+    background-color: #e9ecef !important;
 }
 .brand{
     height: 25px;
@@ -26,5 +22,6 @@ body {
     border-radius: 50%;
 }
 .navbar-dark{
-    background-color: #87adde;
+    background-color: #ab885a;
 }
+

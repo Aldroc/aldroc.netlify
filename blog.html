@@ -1,15 +1,52 @@
 <html>
     <head>
         <title>Aldroc's Blog</title>
-        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
         <meta name="theme-color" content="#deb887"/>
         <link href="CSS/blog.css" rel="stylesheet">
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="node_modules/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+        <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
-        <header class="head">
-            <h1>First Blog Post</h1>
-            <a href="index.html"><img class="home" src="Assets/vippng.com-casas-png-787477.png"></a>
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand mr-auto" href="index.html"><img class="brand" src="https://instagram.famd1-2.fna.fbcdn.net/v/t51.2885-19/s150x150/71525758_418236459076222_1895098742483189760_n.jpg?_nc_ht=instagram.famd1-2.fna.fbcdn.net&_nc_ohc=AkHQ0tCv75QAX_w9bGW&oh=437087629d11ca5547eaeb9f39e01c6e&oe=5EAF7AA4"></a>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-book fa-lg"></span> Blog</a></li>
+                    </ul>    
+                </div>
+            </div>    
+        </nav>
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-2">
+                        <img class="dp" src="https://instagram.famd1-2.fna.fbcdn.net/v/t51.2885-19/s150x150/71525758_418236459076222_1895098742483189760_n.jpg?_nc_ht=instagram.famd1-2.fna.fbcdn.net&_nc_ohc=AkHQ0tCv75QAX_w9bGW&oh=437087629d11ca5547eaeb9f39e01c6e&oe=5EAF7AA4">
+                    </div>
+                    <div class="col-12 col-sm-auto">    
+                        <h1>Learning full stack development :)</h1>
+                        <h3>Wish me luck!</h3>
+                        <h5>I'm learning from <a class="link" target="_blank" href="https://www.youtube.com/playlist?list=PLzvhQUIpvvug-c-bExl_xFcopeQi_sa29">here!</a></h5>
+                    </div>    
+                </div>
+            </div>
         </header>
-        <p>Some random text.</p>
+        <div class="container">
+            <div class="row">
+                <ol class="col-12 breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Blog</li>
+                </ol>
+            </div>
+        </div>    
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>        
     </body>
 </html>
