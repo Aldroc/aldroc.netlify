@@ -2,7 +2,7 @@
     <head>
         <title>Aldroc</title>
         <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-        <meta name="theme-color" content="#deb887"/>
+        <meta name="theme-color" content="#ffa500"/>
         <link href="CSS/main.css" rel="stylesheet">
         <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="node_modules/bootstrap-social/bootstrap-social.css" rel="stylesheet">
@@ -11,10 +11,10 @@
     <body>
         <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <a class="navbar-brand mr-auto" href="#"><img class="brand" src="https://instagram.famd1-2.fna.fbcdn.net/v/t51.2885-19/s150x150/71525758_418236459076222_1895098742483189760_n.jpg?_nc_ht=instagram.famd1-2.fna.fbcdn.net&_nc_ohc=AkHQ0tCv75QAX_w9bGW&oh=437087629d11ca5547eaeb9f39e01c6e&oe=5EAF7AA4"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="Navbar">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
@@ -25,14 +25,39 @@
         </nav>
         <header class="jumbotron">
             <div class="container">
-                <div class="row justify-items-center">
+                <div class="row justify-content-center">
                     <div class="col-12 col-sm-2">
                         <img class="dp" src="https://instagram.famd1-2.fna.fbcdn.net/v/t51.2885-19/s150x150/71525758_418236459076222_1895098742483189760_n.jpg?_nc_ht=instagram.famd1-2.fna.fbcdn.net&_nc_ohc=AkHQ0tCv75QAX_w9bGW&oh=437087629d11ca5547eaeb9f39e01c6e&oe=5EAF7AA4">
                     </div>
-                    <div class="col-12 col-sm-auto">    
+                    <div class="col-12 col-sm-4">    
                         <h1>Learning full stack development :)</h1>
                         <h3>Wish me luck!</h3>
                         <h5>I'm learning from <a class="link" target="_blank" href="https://www.youtube.com/playlist?list=PLzvhQUIpvvug-c-bExl_xFcopeQi_sa29">here!</a></h5>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#current" role="tab" data-toggle="tab">
+                                    Currently Learning
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skill" role="tab" data-toggle="tab">
+                                    Skills Acquired
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade show active" id="current">
+                                <h4>Bootstrap 4</h4>
+                                <p>Front-End Web UI Framework</p> 
+                            </div>
+                            <div class="tab-pane fade" role="tabpanel" id="skill">
+                                <ul class="list-unstyled">
+                                    <li>HTML, CSS & Javascript</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>    
                 </div>
             </div>
@@ -55,22 +80,12 @@
                             <li>Added navigation bar functionality.</li><br>
                             <li>Added breadcrumbs.</li><br>
                             <li>Font Awesome icon pack has been implemented.</li><br>
+                            <li>Tabbed navigation added to display skills.</li><br>
                         </ul>
                     </b>
                 </div>    
             </div>        
         </div>
-        <footer class="footer">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-5 col-sm-2">
-                        <a class="btn btn-social-icon btn-facebook" href="https://www.instagram.com/_aldroc_/"><i class="fa fa-instagram"></i></a>
-                        <a class="btn btn-social-icon btn-github" href="https://github.com/Aldroc"><i class="fa fa-github"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:riptide1112@gmail.com"><i class="fa fa-envelope-o"></i></a>
-                    </div>    
-                </div>    
-            </div>    
-        </footer>    
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>    
