@@ -16,6 +16,7 @@ body {
     z-index: 0;
     background-color: #ede7de !important;
     color: #231827 !important;
+    font-family: 'Alegreya', garamond !important;
 }
 .brand{
     height: 25px;

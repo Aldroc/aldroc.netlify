@@ -7,6 +7,7 @@
         <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="node_modules/bootstrap-social/bootstrap-social.css" rel="stylesheet">
         <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
         </head>
     <body>
         <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
@@ -23,15 +24,29 @@
                 </div>
             </div>    
         </nav>
+        <div id="aboutme" class="modal fade" role="dialog">
+            <div class="modal-dialog" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">About Me</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
         <header class="jumbotron">
             <div class="container">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center align-items-center">
                     <div class="col-12 col-sm-2">
                         <img class="dp" src="https://instagram.famd1-2.fna.fbcdn.net/v/t51.2885-19/s150x150/71525758_418236459076222_1895098742483189760_n.jpg?_nc_ht=instagram.famd1-2.fna.fbcdn.net&_nc_ohc=AkHQ0tCv75QAX_w9bGW&oh=437087629d11ca5547eaeb9f39e01c6e&oe=5EAF7AA4">
                     </div>
                     <div class="col-12 col-sm-4">    
                         <h1>Learning full stack development :)</h1>
                         <h3>Wish me luck!</h3>
+                        <button type="button" data-toggle="modal" data-target="#aboutme" class="btn btn-block" id="abtmeBtn">More About Me!</button>
                     </div>
                     <div class="col-12 col-sm-6">
                         <ul class="nav nav-tabs">
@@ -48,13 +63,14 @@
                         </ul>
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane fade show active" id="current">
-                                <h4>jQuery</h4>
-                                <p>JavaScript library to greatly simplify JavaScript programming</p> 
+                                <h4>Less & Sass</h4>
+                                <p>CSS Preprocessors</p> 
                             </div>
                             <div class="tab-pane fade" role="tabpanel" id="skill">
                                 <ul class="list-unstyled">
                                     <li>HTML, CSS & Javascript</li>
                                     <li>Bootstrap 4.0</li>
+                                    <li>jQuery</li>
                                 </ul>
                             </div>
                         </div>
@@ -81,6 +97,8 @@
                             <li>Added breadcrumbs.</li><br>
                             <li>Font Awesome icon pack has been implemented.</li><br>
                             <li>Tabbed navigation added.</li><br>
+                            <li>Added a modal to display personal information.</li><br>
+                            <li>Implemented web font with a web safe font to fall back to.</li><br>
                         </ul>
                     </b>
                 </div>    
