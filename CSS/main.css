@@ -43,3 +43,14 @@ body {
 #abtmeBtn{
     background-color: #77acca;
 }
+.modal-header{
+    background-color: #231827;
+    color: #ede7de;
+}
+.modal-header .close{
+    color: #ede7de;
+}
+.modal-body{
+    background-color: #231827;
+    color: #ede7de;
+}

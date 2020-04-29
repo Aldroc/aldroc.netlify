@@ -28,11 +28,11 @@
             <div class="modal-dialog" role="content">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">About Me</h4>
+                        <h3 class="modal-title">About Me</h3>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
-                         
+                        <h5>Hey! My name is Harisankar S, a 3rd year Computer Science Engineering student.</h5>         
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@
                     <div class="col-12 col-sm-4">    
                         <h1>Learning full stack development :)</h1>
                         <h3>Wish me luck!</h3>
-                        <button type="button" data-toggle="modal" data-target="#aboutme" class="btn btn-block" id="abtmeBtn">More About Me!</button>
+                        <button type="button" class="btn btn-block" id="abtmeBtn">More About Me!</button>
                     </div>
                     <div class="col-12 col-sm-6">
                         <ul class="nav nav-tabs">
@@ -63,14 +63,15 @@
                         </ul>
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane fade show active" id="current">
-                                <h4>Less & Sass</h4>
-                                <p>CSS Preprocessors</p> 
+                                <h4>NPM Scripts</h4>
+                                <p>Scripts to automate web development</p> 
                             </div>
                             <div class="tab-pane fade" role="tabpanel" id="skill">
                                 <ul class="list-unstyled">
                                     <li>HTML, CSS & Javascript</li>
                                     <li>Bootstrap 4.0</li>
                                     <li>jQuery</li>
+                                    <li>Less & Sass</li>
                                 </ul>
                             </div>
                         </div>
@@ -106,6 +107,13 @@
         </div>
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>    
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#abtmeBtn').click(function(){
+                    $('#aboutme').modal('show');
+                });
+            });
+        </script>    
     </body>
 </html>
