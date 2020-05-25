@@ -14,7 +14,7 @@
         <!-- Navigation Bar -->
         <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
             <div class="container">
-                <a class="navbar-brand mr-auto" href="#"><img class="brand" src="https://instagram.famd1-2.fna.fbcdn.net/v/t51.2885-19/s150x150/71525758_418236459076222_1895098742483189760_n.jpg?_nc_ht=instagram.famd1-2.fna.fbcdn.net&_nc_ohc=AkHQ0tCv75QAX_w9bGW&oh=437087629d11ca5547eaeb9f39e01c6e&oe=5EAF7AA4"></a>
+                <a class="navbar-brand mr-auto" href="#"><img class="brand" src="https://instagram.famd1-2.fna.fbcdn.net/v/t51.2885-19/s150x150/71525758_418236459076222_1895098742483189760_n.jpg?_nc_ht=instagram.famd1-2.fna.fbcdn.net&_nc_ohc=7VOcCu2LoqAAX-Tzx6V&oh=b8b48d9c4f55e30bdad7fbc7c1b6580f&oe=5EF6ABA4"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                         <span class="navbar-toggler-icon"></span>
                 </button>
@@ -42,6 +42,21 @@
             </div>
         </div>
 
+        <!-- React Notification Modal -->
+        <div class="modal fade" role="dialog" id="reactModal">
+            <div class="modal-dialog" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Notification!</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>This space is soon to be re-written using React!</h5>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
         <!-- Jumbotron -->
         <header class="jumbotron">
             <div class="container">
@@ -49,7 +64,7 @@
 
                     <!-- Jumbotron Image -->
                     <div class="col-12 col-sm-2">
-                        <img class="dp" src="https://instagram.famd1-2.fna.fbcdn.net/v/t51.2885-19/s150x150/71525758_418236459076222_1895098742483189760_n.jpg?_nc_ht=instagram.famd1-2.fna.fbcdn.net&_nc_ohc=AkHQ0tCv75QAX_w9bGW&oh=437087629d11ca5547eaeb9f39e01c6e&oe=5EAF7AA4">
+                        <img class="dp" src="https://instagram.famd1-2.fna.fbcdn.net/v/t51.2885-19/s150x150/71525758_418236459076222_1895098742483189760_n.jpg?_nc_ht=instagram.famd1-2.fna.fbcdn.net&_nc_ohc=7VOcCu2LoqAAX-Tzx6V&oh=b8b48d9c4f55e30bdad7fbc7c1b6580f&oe=5EF6ABA4">
                     </div>
 
                     <!-- Jumbotron Text & Modal Button -->
@@ -97,12 +112,12 @@
             <div class="row justify-content-center">
                 <div class="col-10">           
                     <h4>Progress:</h4>
-                    <b>
+                    <strong>
                         <ul>
                             <li>Hosted site on Netlify.</li><br>
                             <li>Github and Netlify connection established. Continuous deployment now possible!</li><br>
                             <li>Set up SSH key to bypass credential entry on each git push.</li><br>
-                            <li>Setting up a <a class="link" target="_blank" href="blog.html">blog</a> on the site for further experimentation.</li><br>
+                            <li>Setting up a <a class="link" href="blog.html">blog</a> on the site for further experimentation.</li><br>
                             <li>Learning javascript by building a <a class = "link" target="_blank" href="js_index.html">personal expense web app.</a> The reference material can be found <a class="link" target="_blank" href="https://www.youtube.com/playlist?list=PLzvhQUIpvvuj9nN70USkHJrrSeQ9aiqdB">here.</a></li><br>
                             <li>Set up the front-end web UI framework Bootstrap.</li><br>
                             <li>Set up Node.js and NPM.</li><br>
@@ -115,7 +130,7 @@
                             <li>Added a modal to display personal information.</li><br>
                             <li>Implemented web font with a web safe font to fall back to.</li><br>
                         </ul>
-                    </b>
+                    </strong>
                 </div>    
             </div>        
         </div>
@@ -131,6 +146,7 @@
                 $('#abtmeBtn').click(function(){
                     $('#aboutme').modal('show');
                 });
+                $('#reactModal').modal('show');
             });
         </script>    
     </body>
